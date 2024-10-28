@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .home{
+            background-color: blue;
+            padding:4px;
+        
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color:white;
+        }
+        .sign{
+            float: right;
+        }
+        .man{
+            float: right;
+            color:blue;
+            
+            
+        }
+        .find{
+            border-radius: 5px ;
+            border: 1px solid black;
+            height: 45vh;
+            width: 23vw ;
+            margin-right: 56%;
+        }
+        .display{
+            background-color:  black;
+            border: 1px solid black;
+            height: 20%;
+            width:100% ;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            color: white;
+        
+        }
+        button{
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            margin: 4px;
+            margin-left: 10px;
+        }
+        .ret{
+            height: 30px;
+            width:100px;
+            margin-left: 22px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="home">
+        <ul class="certain">
+            <li><a href="./index.html">calculater</a></li>
+            <li class="sign"><a href="./sign.html"></a></li><button class="man" id="log">login</Button>
+                
+        </ul>
+        </nav>
+        <h1 style="margin-top: 5%; margin-left: 34%;">
+            Normal Calculater
+        </h1>
+        <div class="find" style="background-color: aqua;">
+            
+            <input type="text" name="name" id="result">
+            <div class="but"></div>
+            <button type="button" class="non">7</button>
+            <button type="button"class="non">8</button>
+            <button type="button"class="non">9</button>
+            <button type="button"class="non" id="del">Del</button>
+            <button type="button"class="non">4</button>
+            <button type="button"class="non">5</button>
+            <button type="button"class="non">6</button>
+            <button type="button"class="non">+</button>
+            <button type="button"class="non">1</button>
+            <button type="button"class="non">2</button>
+            <button type="button"class="non">3</button>
+            <button type="button"class="non">-</button>
+            <button type="button"class="non">.</button>
+            <button type="button"class="non">0</button>
+            <button type="button"class="non">/</button>
+            <button type="button"class="non">*</button>
+            <button type="button" class="ret" id="res">Reset</button>
+            <button type="button" class="ret" id="equal">=</button>
+
+
+
+
+        </div>
+        <script>
+            var btn =document.getElementById("log");
+            btn.addEventListener("click",()=>{
+
+             })
+
+
+             let myDate = new Date();
+             console.log(myDate);
+             let hour = myDate.getHours();
+             console.log(hour)
+             var b
+             if(hour <12){
+                console.log("Good morning");
+        
+
+             }else if(hour<18){
+                console.log("Good afternoon");
+
+             }else{
+                console.log("Good evening");
+             }
+            //  let vish = [];
+            //  function handclick(){
+            //     var buttonClicked = this.innerText;
+            //     NumberAddede(buttonClicked);
+            //     console.log(buttonClicked);
+            //     console.log(vish);
+            
+            //  }
+            //  var number = document.querySelectorAll(".non")
+            //  for(let i = 0; i < number.length; i++){
+            //     number[i].addEventListener("click", handclick);
+            //  }
+            
+            //  const dis = document.getElementById("get");
+            //  function NumberAddede(clickkey){
+            //     switch(clickkey){
+            //         case "7":
+            //             var a = dis.innerText = 7;
+            //             vish.push(7);
+                        
+                        
+            //             break;
+
+            //         case "8":
+            //             var a1 = dis.innerText = 8;
+            //             vish.push(8);
+                        
+                        
+            //             break;
+            //         case "9":
+            //             var a2 = dis.innerText = 9;
+            //             vish.push(9);
+                       
+            //             break;   
+            //         case "Del":
+            //             var a3 = dis.innerText = 0;
+            //             break;
+            //         case "4":
+            //             var a4 = dis.innerText = 4;
+            //             vish.push(4);
+                        
+            //             break;
+            //         case "5":
+            //             var a5 = dis.innerText = 5;
+            //             vish.push(5);
+                        
+            //             break;
+            //         case "6":
+            //             var a6 = dis.innerText = 6;
+            //             vish.push(6);
+                       
+            //             break;
+                        
+            //         case "+":
+            //             sumNum();
+            //             break;
+            //         case "1":
+            //             var a8 = dis.innerText = 1;
+            //             vish.push(1);
+                       
+            //             break;
+            //         case "2":
+            //             var a9 = dis.innerText = 2;
+                        
+            //             vish.push(2);
+                        
+            //             break;
+            //         case "3":
+            //             var a10 = dis.innerText = 3;
+            //             vish.push(3);
+                       
+            //             break;
+                  
+            //         case "-":
+            //             subNum();
+            //             break;
+            //         case ".":
+            //             var a13= dis.innerText = ".";
+            //             break;
+            //         case "0":
+            //             var a13= dis.innerText = 0;
+            //             vish.push(0)
+                        
+            //             break;    
+                   
+            //         case "/":
+            //             var a15= dis.innerText = "/";
+            //             break;
+            //         case "*":
+            //             mulNum();
+            //             break;
+            //         case "Reset":
+            //             var a18= dis.innerText = "Reset";
+            //             break;
+            //         case "=":
+            //             var a19= dis.innerText = "=";
+            //             break;
+
+
+                    
+            //     }
+
+            //  }
+             function sumNum(){
+                let a = vish[0];
+                console.log(a);
+                let a1 = vish[1];
+                console.log(a1);
+                let sum = parseInt(a) + parseInt(a1)
+                console.log(sum);
+                dis.innerText = sum;
+
+             }
+             function subNum(){
+                let b = vish[0];
+                console.log(b);
+                let b1 = vish[1];
+                console.log(b1);
+                let sub = parseInt(b) - parseInt(b1)
+                console.log(sub);
+                dis.innerText = sub;
+
+             }
+             function mulNum(){
+                let c = vish[0];
+                console.log(c);
+                let c1 = vish[1];
+                console.log(c1);
+                let mul = parseInt(c) * parseInt(c1)
+                console.log(mul);
+                dis.innerText = mul;
+
+             }
+             var allNum = document.querySelectorAll(".non");
+             for(let i = 0;i < allNum.length; i++){
+                allNum[i].addEventListener("click" , display);
+             }
+             const sol = document.getElementById("equal");
+             sol.addEventListener("click", solve);
+             function solve(){
+                let x = document.getElementById("result").value;
+                let y = eval(x);
+                console.log(y);
+                document.getElementById("result").value = y;
+
+             } 
+             var res = document.getElementById("res");
+             res.addEventListener("click",()=>{
+                document.getElementById("result").value = 0;
+            })
+            var del = document.getElementById("del");
+             del.addEventListener("click",()=>{
+                document.getElementById("result").value = 0;
+            })
+            function display(val){
+                document.getElementById("result").value += this.innerText
+            }
+
+
+
+
+        </script>
+    
+</body>
+</html>

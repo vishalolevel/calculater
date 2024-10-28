@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* .home{
+            background-color: blue;
+            padding:4px;
+        
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color:white;
+        }
+        .sign{
+            float: right;
+        }
+        .man{
+            float: right;
+            color:blue;
+            
+        }
+        h1{
+            margin-left: 25%;
+        }
+        
+    
+        .com{
+            background-color: green;
+            margin-left: 40%;
+            margin-top: 8%;
+            color: white;
+        }
+        h3{
+            background-color:blue;
+            text-align: center;
+            margin-top:200px;
+            color: white;
+        } */
+        .main{
+            background-color: blue;
+            height: 45px;
+        }
+        .non{
+            margin-left: 1060px;
+            margin-top: 9px;
+        } 
+        li{
+            list-style: none;
+            display: inline-block;
+            color: white;
+        }
+        h2{
+            margin-left: 30%;
+            padding-top: 30px;
+        }
+        .from{
+            margin-left: 30%;
+        
+            width: 500vb;
+            padding: 34px;
+        }
+        .get{
+            margin-left:45%;
+            background-color: green;
+            color: white;
+        }
+        .made{
+            
+            background-color: blue;
+            color: white;
+            height: 45px;
+            text-align: center;
+        }
+        
+        
+            
+        
+    
+
+    </style>
+</head>
+<body>
+    <div class="main"> 
+        <nav>
+            <ul>
+                <li><span>Vishal kumar</span></li>
+                <li>
+                    <button type="button" class="non">login</button>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <h2>Set up your account to get started</h2>
+        <div class="from"> 
+            <from action="label">
+                <label for="text"></label>
+                <input type="text" id="lab" placeholder="First Name">
+                <label for=" home"></label>
+                <input type="text" id="last" placeholder="last name">
+            </from>
+
+        </div>
+        <button type="button" class="get" id="get">Get started</button>
+        <h3 class="made">Made with by <span>Vishal kumar</span></h3>
+        <script>
+            var btn = document.getElementById("get");
+            btn.addEventListener("click",()=>{
+                var n = document.getElementById("lab").value;
+                console.log(n)
+                var m = document.getElementById("last").value;
+                console.log(m)
+                var c = n +" " + m;
+                var d =localStorage.setItem("name",c)
+            })
+        </script>
+
+</body>
+</html>
